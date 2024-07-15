@@ -191,7 +191,7 @@ jobs:
     
     - name: SSH远程连接（make menuconfig）
       if: env.SSH_ACTION == 'true'
-      uses: vipshmily/ssh2actions@main
+      uses: db-one/debugger-action@main
 
     - name: 生成"${{ matrix.target }}"配置文件
       if: env.REPO_TOKEN
